@@ -1,0 +1,8 @@
+body{
+    background: red !important;
+}
+
+input.form-control.form-control.input {
+    background: red;
+    color: white;
+}

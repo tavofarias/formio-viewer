@@ -20,6 +20,16 @@
     <script src="lib/formiojs/formio.form.min.js" inline></script>
     <script src="lib/seamless/seamless.child.min.js" inline></script>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" inline/>
+    <link rel="stylesheet" href="https://cdn.statically.io/gist/tavofarias/af198b29e45540a4de45e14b5bf29e6a/raw/31c07f02fd4e1e96e8ab2352dde1e191328e9ce5/styles.css" inline/>
+    <style>
+      body{background-color: red;}
+      @media print {
+        label{
+          color: red;
+        }
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="lib/bootswatch/paper/bootstrap.min.css" inline/> -->
     <script type="text/javascript">
       var query = {};
       var parts = [];
@@ -347,6 +357,7 @@
     srcBtn.addEventListener('click', function(event) {
       event.preventDefault();
       if (!formSrcElem.value) {
+        // formSrcElem.value = 'https://travant.form.io/bookings';
         alert('You must provide a Form Embed URL');
         return;
       }
